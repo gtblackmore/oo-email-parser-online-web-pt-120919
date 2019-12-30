@@ -10,8 +10,9 @@ class EmailAddressParser
     addresses = emails.split(", ")
     addresses = emails.split(" ")
     collection = []
-    addresses.each do |address|
-      collection << address.uniq?
+    addresses.select do |address|
+      
+      collection << address
     end
   collection
   end
