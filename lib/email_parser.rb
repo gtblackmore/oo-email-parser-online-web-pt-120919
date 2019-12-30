@@ -10,7 +10,7 @@ class EmailAddressParser
     addresses = emails.split(/[\,\s]+/)
     collection = []
     addresses.select do |address|
-      collection << address
+      collection << address.uniq
     end
   collection
   end
