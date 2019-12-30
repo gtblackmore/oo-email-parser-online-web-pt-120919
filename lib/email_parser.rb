@@ -9,7 +9,7 @@ class EmailAddressParser
   def parse
     addresses = emails.split(/[\,\s]+/)
     collection = []
-    addresses.each do |address|
+    addresses.collect do |address|
       
       end
     end
