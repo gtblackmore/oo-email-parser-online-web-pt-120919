@@ -11,7 +11,7 @@ class EmailAddressParser
     addresses = emails.split(" ")
     collection = []
     addresses.each do |address|
-      collection << address.uniq
+      collection << address.uniq?
     end
   collection
   end
