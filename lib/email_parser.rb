@@ -9,9 +9,9 @@ class EmailAddressParser
   def parse
     addresses = @emails.split(", ")
     addresses = @emails.split(" ")
-    array = []
+    parsed_emails = []
     addresses.each do |address|
-      array << address.uniq
+      parsed_emails << address.uniq
     end
   end
   array
