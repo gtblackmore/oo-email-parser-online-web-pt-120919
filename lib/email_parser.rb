@@ -6,14 +6,14 @@ class EmailAddressParser
    @emails = emails
   end
   
-  def parse
-    addresses = emails.split(/[\,\s]+/)
+def parse
+    addresses = emails. split(/[\,\s]+/)
     collection = []
     addresses.each do |address|
-      collection << address
+      if !collection.find { |i| i == address }
+        collection << address
+      end
     end
-    collection.uniq!
-  end
-  collection
+    collection
   end
 end
