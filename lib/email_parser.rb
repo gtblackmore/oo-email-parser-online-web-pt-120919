@@ -10,8 +10,7 @@ class EmailAddressParser
     addresses = emails.split(/[\,\s]+/)
     collection = []
     addresses.each do |address|
-      if address != address
-        collection << address
+      
       end
     end
   collection
